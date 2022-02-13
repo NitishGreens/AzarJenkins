@@ -1,0 +1,317 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-13T05:13:38.362Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4971755100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "TC01_Validation of Login page with valid username and valid password",
+        "description": "",
+        "id": "validation-of-login-page-in-facebook-web-application;tc01-validation-of-login-page-with-valid-username-and-valid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 859601200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2247900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User launch Facebook Web Application",
+            "match": {
+              "location": "StepDefinition.user_launch_Facebook_Web_Application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 324298100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters valid username \"mani@gmail.com\" and valid password \"mani@123\" and click on login Button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mani@gmail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"mani@123\"",
+                  "offset": 63
+                }
+              ],
+              "location": "StepDefinition.user_enters_valid_username_and_valid_password_and_click_on_login_Button(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.stepdefinition.StepDefinition.user_verify_Home_Page_is_displayed(StepDefinition.java:27)\r\n\tat ✽.User verify Home Page is displayed(file:src/test/resources/Features/FacebookLogin.feature:8)\r\n",
+              "duration": 5494700,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User verify Home Page is displayed",
+            "match": {
+              "location": "StepDefinition.user_verify_Home_Page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TCAR4793835"
+          },
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@Reg"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-13T05:13:44.567Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2986542700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "TC02_Validation of Sign page with invalid inputs",
+        "description": "",
+        "id": "validation-of-login-page-in-facebook-web-application;tc02-validation-of-sign-page-with-invalid-inputs;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 845647900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 314100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User launch Facebook Web Application",
+            "match": {
+              "location": "StepDefinition.user_launch_Facebook_Web_Application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 93301300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User Click on createNewAccount Button",
+            "match": {
+              "location": "StepDefinition.user_Click_on_createNewAccount_Button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 911095600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enters \"mani\"and \"java\" and click on signUp Button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mani\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"java\"",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefinition.user_enters_and_and_click_on_signUp_Button(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 781900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User verify Error message is displayed",
+            "match": {
+              "location": "StepDefinition.user_verify_Error_message_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TCAR4793835"
+          },
+          {
+            "name": "@Sanity"
+          },
+          {
+            "name": "@Reg"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-13T05:13:49.412Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2893885700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "TC02_Validation of Sign page with invalid inputs",
+        "description": "",
+        "id": "validation-of-login-page-in-facebook-web-application;tc02-validation-of-sign-page-with-invalid-inputs;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 926379400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 310000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User launch Facebook Web Application",
+            "match": {
+              "location": "StepDefinition.user_launch_Facebook_Web_Application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 90210000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User Click on createNewAccount Button",
+            "match": {
+              "location": "StepDefinition.user_Click_on_createNewAccount_Button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 810042500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enters \"abu\"and \"selenium\" and click on signUp Button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abu\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"selenium\"",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinition.user_enters_and_and_click_on_signUp_Button(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2405200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User verify Error message is displayed",
+            "match": {
+              "location": "StepDefinition.user_verify_Error_message_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TCAR4793835"
+          },
+          {
+            "name": "@Sanity"
+          },
+          {
+            "name": "@Reg"
+          }
+        ]
+      }
+    ],
+    "name": "Validation of Login Page in facebook Web Application",
+    "description": "",
+    "id": "validation-of-login-page-in-facebook-web-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/FacebookLogin.feature",
+    "tags": [
+      {
+        "name": "@TCAR4793835",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

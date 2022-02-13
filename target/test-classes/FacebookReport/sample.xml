@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="15.772837">
+<testcase classname="Validation of Login Page in facebook Web Application" name="TC01_Validation of Login page with valid username and valid password" time="6.200526">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at com.stepdefinition.StepDefinition.user_verify_Home_Page_is_displayed(StepDefinition.java:27)&#13;&#10;&#9;at ✽.User verify Home Page is displayed(file:src/test/resources/Features/FacebookLogin.feature:8)&#13;&#10;"><![CDATA[Given User launch Facebook Web Application..................................passed
+When User enters valid username "mani@gmail.com" and valid password "mani@123" and click on login Button.passed
+Then User verify Home Page is displayed.....................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.stepdefinition.StepDefinition.user_verify_Home_Page_is_displayed(StepDefinition.java:27)
+	at ✽.User verify Home Page is displayed(file:src/test/resources/Features/FacebookLogin.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="Validation of Login Page in facebook Web Application" name="TC02_Validation of Sign page with invalid inputs" time="4.844353">
+<system-out><![CDATA[Given User launch Facebook Web Application..................................passed
+When User Click on createNewAccount Button..................................passed
+And User enters "mani"and "java" and click on signUp Button.................passed
+Then User verify Error message is displayed.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validation of Login Page in facebook Web Application" name="TC02_Validation of Sign page with invalid inputs 2" time="4.727958">
+<system-out><![CDATA[Given User launch Facebook Web Application..................................passed
+When User Click on createNewAccount Button..................................passed
+And User enters "abu"and "selenium" and click on signUp Button..............passed
+Then User verify Error message is displayed.................................passed
+]]></system-out>
+</testcase>
+</testsuite>
